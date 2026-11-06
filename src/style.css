@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: radial-gradient(circle, #17452e, #061b12 75%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 25px;
+}
+
+.casino {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.45);
+    border: 3px solid #c9a343;
+    border-radius: 25px;
+    padding: 40px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 0 35px rgba(218, 175, 70, 0.3);
+}
+
+h1 {
+    color: #e8c56b;
+    font-family: 'Cinzel', serif;
+    font-size: 38px;
+    letter-spacing: 4px;
+}
+
+.subtitulo {
+    color: #d6b65e;
+    letter-spacing: 5px;
+    margin: 10px 0 30px;
+    font-size: 13px;
+}
+
+.ruleta-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.ruleta {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    border: 12px solid #d4ad53;
+    background: conic-gradient(
+        #008000 0deg 9.7297deg,
+        #bd2929 9.7297deg 19.4594deg,
+        #151515 19.4594deg 29.1891deg,
+        #bd2929 29.1891deg 38.9189deg,
+        #151515 38.9189deg 48.6486deg,
+        #bd2929 48.6486deg 58.3783deg,
+        #151515 58.3783deg 68.1081deg,
+        #bd2929 68.1081deg 77.8378deg,
+        #151515 77.8378deg 87.5675deg,
+        #bd2929 87.5675deg 97.2973deg,
+        #151515 97.2973deg 107.0270deg,
+        #bd2929 107.0270deg 116.7567deg,
+        #151515 116.7567deg 126.4864deg,
+        #bd2929 126.4864deg 136.2162deg,
+        #151515 136.2162deg 145.9459deg,
+        #bd2929 145.9459deg 155.6756deg,
+        #151515 155.6756deg 165.4053deg,
+        #bd2929 165.4053deg 175.1351deg,
+        #151515 175.1351deg 184.8648deg,
+        #bd2929 184.8648deg 194.5945deg,
+        #151515 194.5945deg 204.3242deg,
+        #bd2929 204.3242deg 214.0540deg,
+        #151515 214.0540deg 223.7837deg,
+        #bd2929 223.7837deg 233.5134deg,
+        #151515 233.5134deg 243.2431deg,
+        #bd2929 243.2431deg 252.9729deg,
+        #151515 252.9729deg 262.7026deg,
+        #bd2929 262.7026deg 272.4323deg,
+        #151515 272.4323deg 282.1620deg,
+        #bd2929 282.1620deg 291.8918deg,
+        #151515 291.8918deg 301.6215deg,
+        #bd2929 301.6215deg 311.3512deg,
+        #151515 311.3512deg 321.0809deg,
+        #bd2929 321.0809deg 330.8107deg,
+        #151515 330.8107deg 340.5404deg,
+        #bd2929 340.5404deg 350.2701deg,
+        #151515 350.2701deg 360deg
+    );
+    box-shadow:
+        0 0 0 6px #76551c,
+        0 0 30px rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centro {
+    width: 75px;
+    height: 75px;
+    background: radial-gradient(#f6d77c, #93691f);
+    border: 5px solid #f1d58c;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #301d08;
+    font-size: 35px;
+}
+
+.girando {
+    animation: girar 3s cubic-bezier(0.15, 0.6, 0.2, 1) forwards;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(1800deg);
+    }
+}
+
+h2 {
+    font-family: 'Cinzel', serif;
+    color: #e8c56b;
+    font-size: 19px;
+    margin: 25px 0 15px;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #c9a343;
+    border-radius: 10px;
+    background: #10271b;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    outline: none;
+}
+
+input::placeholder {
+    color: #b8b8b8;
+}
+
+button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 16px;
+    background: linear-gradient(135deg, #f2d47e, #ad7926);
+    color: #251907;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Cinzel', serif;
+    font-weight: 900;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 20px #e8c56b;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.resultado {
+    margin-top: 30px;
+    min-height: 100px;
+}
+
+#mensaje {
+    font-size: 16px;
+    color: #f3d98d;
+    margin-bottom: 15px;
+}
+
+#numero-resultado {
+    font-family: 'Cinzel', serif;
+    font-size: 55px;
+    font-weight: 900;
+    color: #e8c56b;
+    text-shadow: 0 0 15px #d4ad53;
+}
+
+#numero-resultado.rojo {
+    color: #bd2929;
+    text-shadow: 0 0 15px #bd2929;
+}
+
+#numero-resultado.negro {
+    color: #ffffff;
+    text-shadow: 0 0 15px #888888;
+}
+
+#numero-resultado.verde {
+    color: #00c853;
+    text-shadow: 0 0 15px #00c853;
+}
+
+.aviso {
+    margin-top: 25px;
+    color: #888888;
+    font-size: 9px;
+    line-height: 1.6;
+    text-align: justify;
+    opacity: 0.75;
+}
+
+@media (max-width: 480px) {
+    .casino {
+        padding: 25px 18px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .ruleta {
+        width: 190px;
+        height: 190px;
+    }
+}
